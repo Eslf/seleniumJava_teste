@@ -7,13 +7,13 @@ antes dos testes serem realizados.
 
 Ao clonar o repositório, abra o arquivo "pom.xml" e procure pela seguinte seção:
 
- <dependency>
-	   <groupId>com.sun</groupId>
-	   <artifactId>tools</artifactId>
-	   <version>1.5</version>
-	   <scope>system</scope>
-	   <systemPath>XXXX</systemPath>
-  </dependency>
+	 <dependency>
+		   <groupId>com.sun</groupId>
+		   <artifactId>tools</artifactId>
+		   <version>1.5</version>
+		   <scope>system</scope>
+		   <systemPath>XXXX</systemPath>
+	  </dependency>
   
   Onde está o "XXXX",substitua pelo local do arquivo "com.sun.tools.jar" em seu computador.
   
