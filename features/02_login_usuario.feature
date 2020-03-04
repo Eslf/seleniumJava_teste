@@ -1,4 +1,4 @@
-Feature: Estória de usuário com os passos para o login de uma conta de usuário.
+Feature: Login da conta de usuário.
 
 Scenario: Login de usuário com um e-mail já existente no banco de dados
 

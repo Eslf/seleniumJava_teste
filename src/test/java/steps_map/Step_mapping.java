@@ -40,6 +40,8 @@ public class Step_mapping {
 		System.setProperty("webdriver.firefox.driver", "/usr/local/bin/geckodriver");
 		driver = new FirefoxDriver();
 	    driver.get("http://www.juliodelima.com.br/taskit/");
+	    driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
 	}
 	
 	// Passos Criar usuario
@@ -51,12 +53,12 @@ public class Step_mapping {
 	
 	@Given ("^Cadastrar nome de usuario$")
 	public void cadastrarNomeUsuario() {
-		driver.findElement(By.name("name")).sendKeys("Nome de Usuario Java8");
+		driver.findElement(By.name("name")).sendKeys("Nome de Usuario");
 	}
 	
 	@Given ("^Cadastrar login do usuario$")
 	public void cadastrarLoginUsuario() {
-		driver.findElement(By.name("login")).sendKeys("login_16@email.com");
+		driver.findElement(By.name("login")).sendKeys("login_17@email.com");
 	}
 	
 	@Given ("^Cadastrar senha do usuario$")
@@ -107,7 +109,7 @@ public class Step_mapping {
 	
 	@Then ("^Confirmar login com sucesso$")
 	public void confirmarLoginSucesso() {
-
+		
 		try {
 		    Thread.sleep(2000);
 		    assertThat(driver.findElement(By.linkText("Logout")).getText(), is("Logout"));

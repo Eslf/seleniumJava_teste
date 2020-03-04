@@ -1,4 +1,4 @@
-Feature: Estória de usuário com os passos para a criação de uma nova conta de usuário.
+Feature: Criar uma nova conta de usuário.
 
 Scenario: Cadastro de novo usuário com um e-mail ainda não presente no banco de dados
 

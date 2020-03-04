@@ -1,4 +1,4 @@
-Feature: Estória de usuário com os passos para a cricao de tarefas de um usuário.
+Feature: Criar tarefas de um usuário.
 
 Scenario: Criar uma nova tarefa de um usuário cadastrado.
 
